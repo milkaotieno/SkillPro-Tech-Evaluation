@@ -2,7 +2,7 @@ services:
   - name: skillpro-api
     type: web
     runtime: python
-    region: kenya  # Change if needed
+    region: oregon  # Change if needed
     plan: free  # Use "starter" if free plan isn't available
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
